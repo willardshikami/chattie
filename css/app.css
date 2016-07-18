@@ -52,9 +52,17 @@ table {
   ========================================
 */
 
-body {
+.navigation {
     background: #ddd;
+}
+
+body {
+    background: #bbb;
     font-family: 'lato';
+}
+
+.head {
+    
 }
 
 .logo {
@@ -103,9 +111,9 @@ nav a:hover {
 
 
 .how-it-works {
-    padding-right: 350px;
-    padding-left: 350px;
+    padding: 50px;
     text-align: center;
+    padding-bottom: 20px
 }
 
 .how-it-works h3 {
@@ -114,9 +122,6 @@ nav a:hover {
     
 }
 
-form {
-    padding: 50px
-}
 
 @media only screen and (max-width: 480px) {
     
@@ -132,8 +137,199 @@ form {
     padding: 50px;
     }
     
-    form {
+    label {
             padding: 20px;
         }
 
+}
+/*
+  ========================================
+  Chat Section
+  ========================================
+*/
+
+input,
+select,
+textarea {
+    font: 300 16px/22px
+        
+}
+
+
+ input,
+ select,
+textarea {
+    border: 1px solid #a9a9a9;
+    border-radius: 5px;
+    display: block;
+    margin: 5px 0 27px 0;
+    padding: 5px 8px;
+}
+
+
+textarea {
+    width:100%;
+}
+
+select {
+    height: 32px;
+    width: 80px;
+}
+
+.user {
+    width: 400px;
+}
+
+
+textarea {
+    height: 78px;
+    width: 400px;
+}
+
+.chat-area textarea{
+    height: 300px;
+    width: 100%;
+}
+
+/*
+  ========================================
+  Button
+  ========================================
+*/
+
+.btn {
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+}
+
+.btn-default {
+    border: 0;
+    background: #648880;
+    padding: 11px 30px;
+    font-size: 14px;
+}
+
+.btn-default:hover {
+    background: #77a198;
+}
+
+
+/*  GRID OF TWO   ============================================================================= */
+
+
+.span_2_of_2 {
+	width: 100%;
+}
+
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2 {
+		width: 100%; 
+	}
+	.span_1_of_2 {
+		width: 100%; 
+	}
+    
+
+.user {
+    width: 300px;
+}
+
+
+textarea {
+    height: 78px;
+    width: 300px;
+}
+}
+
+
+
+/*  SECTIONS  ============================================================================= */
+
+.section {
+    background: #C1DEC8;
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+    padding: 20px;
+}
+
+.section h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+/*  GROUPING  ============================================================================= */
+
+
+.group:before,
+.group:after {
+    content:"";
+    display:table;
+}
+.group:after {
+    clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*  GRID COLUMN SETUP   ==================================================================== */
+
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+
+.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+
+
+/*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { 
+		margin: 1% 0 1% 0%;
+	}
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+.footer {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+    background: #ddd;
+    padding: 50px;
+}
+
+.copyright, 
+.contact {
+    font-size: 20px;
+    width: 49.2%;
+    line-height: normal;
+    text-align: center;
 }

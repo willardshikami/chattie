@@ -13,6 +13,7 @@
   <body>
     
     <div class="head">
+       <div class="navigation">
         <div class="logo">
             <h1>CHATTIE</h1>
         </div>
@@ -25,6 +26,8 @@
                     <li><a class="signup" href="#">Sign Up</a></li>
                 </ul>
             </nav>
+        </div>
+        
         </div>
         
         <div class="mid-section">
@@ -44,13 +47,63 @@
         At tacimates hendrerit adipiscing vel, exerci maiorum in eam. Mnesarchum adipiscing ut quo, novum electram moderatius cu eum. Et vis quas nulla scribentur, vivendum persecuti nec ea. Elitr nemore conclusionemque ne pri, at eam postulant incorrupte. Minim hendrerit pri ea.</p>
      </div>
       
-    <div>
-        <form>
-            <input type="name" place holder="Name">
+    
+    <div class="section group">
+            <h3>CHATTIE</h3>
+        </div>
+
+        <div class="section group">
+            <div class="col span_1_of_2">
+				   <form action="#" method="post">
+            <fieldset class="chatform">
+                <label>
+                    Username
+                <input class="user" type="text" name="name" placeholder="Username" required>
+                </label>
+                    
+                    <label>
+                            ChatRoom
+                        <select name="quantity" required>
+                            <option value="Public" selected>Public</option>
+                            <option value="Private">Private</option>
+                        </select>
+                    </label>
+                    
+                    <label>
+                        Message
+                        <textarea name="message" placeholder="Type Message"></textarea>
+                    </label>
+            </fieldset>
             
-            <button type="submit">Start Chatting</button>
+            <input class="btn btn-default" type="submit" name="submit" value="Send"> 
         </form>
-    </div>
+            </div>
+            
+            <div class="col span_1_of_2">
+        <form>
+            <label class="chat-area">
+                CHAT
+                <textarea name="Chats">
+                    
+                </textarea>
+            </label>
+        </form>
+            </div>
+        </div>
+        
+        <footer>
+           
+        <div class="footer group">
+            <div class="col copyright">
+               <p>All Rights Reserved</p>
+                <p>&copy; 2016 Chattie</p>
+            </div>
+            <div class="col contact">
+					<p>hello@chattie.com</p>
+                <p>+254 725 305 352</p>
+            </div>
+            </div>
+        </footer>
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
